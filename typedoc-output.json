@@ -1,0 +1,3918 @@
+{
+	"id": 0,
+	"name": "typedoc-reproduction",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "avatar",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 8,
+					"name": "AvatarProps",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/avatar/avatar.tsx",
+							"line": 1,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Omit"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/@types/react/index.d.ts",
+											"qualifiedName": "React.HTMLAttributes"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+													"qualifiedName": "HTMLDivElement"
+												},
+												"name": "HTMLDivElement",
+												"package": "typescript",
+												"externalUrl": "https://developer.mozilla.org/docs/Web/API/HTMLDivElement"
+											}
+										],
+										"name": "React.HTMLAttributes",
+										"package": "@types/react"
+									},
+									{
+										"type": "literal",
+										"value": "content"
+									}
+								],
+								"name": "Omit",
+								"package": "typescript",
+								"externalUrl": "https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 9,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 10,
+											"name": "content",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Content of the Avatar component."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/avatar/avatar.tsx",
+													"line": 6,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/@types/react/index.d.ts",
+															"qualifiedName": "__global.JSX.Element"
+														},
+														"name": "JSX.Element",
+														"package": "@types/react",
+														"qualifiedName": "__global.JSX.Element"
+													},
+													{
+														"type": "intrinsic",
+														"name": "string"
+													}
+												]
+											}
+										},
+										{
+											"id": 11,
+											"name": "contentFill",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Whether the content should fill the whole avatar space or be restricted to the default Avatar sizing values."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`false`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/avatar/avatar.tsx",
+													"line": 9,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										},
+										{
+											"id": 12,
+											"name": "size",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Defines the size of the Avatar. In general, use default size."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`medium`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/avatar/avatar.tsx",
+													"line": 12,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "large"
+													},
+													{
+														"type": "literal",
+														"value": "medium"
+													},
+													{
+														"type": "literal",
+														"value": "small"
+													}
+												]
+											}
+										},
+										{
+											"id": 13,
+											"name": "variant",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Determines the variant of the Avatar, based on the set of predefined background colors."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`blue`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/avatar/avatar.tsx",
+													"line": 15,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "red"
+													},
+													{
+														"type": "literal",
+														"value": "green"
+													},
+													{
+														"type": "literal",
+														"value": "blue"
+													}
+												]
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												10,
+												11,
+												12,
+												13
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/avatar/avatar.tsx",
+											"line": 4,
+											"character": 4
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 14,
+					"name": "Avatar",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/avatar/avatar.tsx",
+							"line": 18,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 15,
+							"name": "Avatar",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/avatar/avatar.tsx",
+									"line": 18,
+									"character": 9
+								}
+							],
+							"parameters": [
+								{
+									"id": 16,
+									"name": "__namedParameters",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 8,
+										"name": "AvatarProps",
+										"package": "typedoc-reproduction"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/@emotion/react/types/jsx-namespace.d.ts",
+									"qualifiedName": "EmotionJSX.Element"
+								},
+								"name": "Element",
+								"package": "@emotion/react",
+								"qualifiedName": "EmotionJSX.Element"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Type Aliases",
+					"children": [
+						8
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						14
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/avatar/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "badge",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 17,
+					"name": "BadgeProps",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/badge/badge.tsx",
+							"line": 1,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/@types/react/index.d.ts",
+									"qualifiedName": "React.HTMLAttributes"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+											"qualifiedName": "HTMLSpanElement"
+										},
+										"name": "HTMLSpanElement",
+										"package": "typescript",
+										"externalUrl": "https://developer.mozilla.org/docs/Web/API/HTMLSpanElement"
+									}
+								],
+								"name": "React.HTMLAttributes",
+								"package": "@types/react"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 18,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 19,
+											"name": "children",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "text content of the Badge."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/badge/badge.tsx",
+													"line": 3,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/@types/react/index.d.ts",
+													"qualifiedName": "React.ReactNode"
+												},
+												"name": "React.ReactNode",
+												"package": "@types/react"
+											}
+										},
+										{
+											"id": 20,
+											"name": "size",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Defines the size of the Badge. In general, default size should be used."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`medium`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/badge/badge.tsx",
+													"line": 6,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "large"
+													},
+													{
+														"type": "literal",
+														"value": "medium"
+													},
+													{
+														"type": "literal",
+														"value": "small"
+													}
+												]
+											}
+										},
+										{
+											"id": 21,
+											"name": "variant",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Determines the variant of the Badge, based on the set of predefined background colors."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`blue`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/badge/badge.tsx",
+													"line": 9,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "red"
+													},
+													{
+														"type": "literal",
+														"value": "green"
+													},
+													{
+														"type": "literal",
+														"value": "blue"
+													}
+												]
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												19,
+												20,
+												21
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/badge/badge.tsx",
+											"line": 1,
+											"character": 65
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 22,
+					"name": "Badge",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/badge/badge.tsx",
+							"line": 12,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 23,
+							"name": "Badge",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/badge/badge.tsx",
+									"line": 12,
+									"character": 9
+								}
+							],
+							"parameters": [
+								{
+									"id": 24,
+									"name": "__namedParameters",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 17,
+										"name": "BadgeProps",
+										"package": "typedoc-reproduction"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/@emotion/react/types/jsx-namespace.d.ts",
+									"qualifiedName": "EmotionJSX.Element"
+								},
+								"name": "Element",
+								"package": "@emotion/react",
+								"qualifiedName": "EmotionJSX.Element"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Type Aliases",
+					"children": [
+						17
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						22
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/badge/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "button",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 25,
+					"name": "ButtonProps",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/button/button-internal.tsx",
+							"line": 31,
+							"character": 12
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 26,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/@types/react/index.d.ts",
+									"qualifiedName": "React.ElementType"
+								},
+								"name": "React.ElementType",
+								"package": "@types/react"
+							},
+							"default": {
+								"type": "literal",
+								"value": "button"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 57,
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": 26,
+								"name": "T",
+								"package": "typedoc-reproduction",
+								"refersToTypeParameter": true
+							},
+							{
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"target": 63,
+										"name": "ButtonIconOnlyProps",
+										"package": "typedoc-reproduction"
+									},
+									{
+										"type": "reference",
+										"target": 68,
+										"name": "ButtonNoIconProps",
+										"package": "typedoc-reproduction"
+									}
+								]
+							}
+						],
+						"name": "PolymorphicComponentProps",
+						"package": "typedoc-reproduction"
+					}
+				},
+				{
+					"id": 27,
+					"name": "Button",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/button/button.tsx",
+							"line": 10,
+							"character": 6
+						}
+					],
+					"signatures": [
+						{
+							"id": 28,
+							"name": "Button",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/button/button.tsx",
+									"line": 10,
+									"character": 6
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 29,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/@types/react/index.d.ts",
+											"qualifiedName": "React.ElementType"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "ElementType",
+										"package": "@types/react",
+										"qualifiedName": "React.ElementType"
+									},
+									"default": {
+										"type": "literal",
+										"value": "button"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 30,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 25,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 29,
+												"name": "T",
+												"package": "typedoc-reproduction",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "ButtonProps",
+										"package": "typedoc-reproduction"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/@types/react/index.d.ts",
+											"qualifiedName": "__global.JSX.Element"
+										},
+										"name": "Element",
+										"package": "@types/react",
+										"qualifiedName": "__global.JSX.Element"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Type Aliases",
+					"children": [
+						25
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						27
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/button/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "code",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 31,
+					"name": "CodeProps",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/code/code.tsx",
+							"line": 1,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/@types/react/index.d.ts",
+									"qualifiedName": "React.HTMLAttributes"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+											"qualifiedName": "HTMLPreElement"
+										},
+										"name": "HTMLPreElement",
+										"package": "typescript",
+										"externalUrl": "https://developer.mozilla.org/docs/Web/API/HTMLPreElement"
+									}
+								],
+								"name": "React.HTMLAttributes",
+								"package": "@types/react"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 32,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 33,
+											"name": "as",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The element used to render this component."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`code`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/code/code.tsx",
+													"line": 4,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "code"
+													},
+													{
+														"type": "literal",
+														"value": "pre"
+													}
+												]
+											}
+										},
+										{
+											"id": 34,
+											"name": "children",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The content of the inline Code sample."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/code/code.tsx",
+													"line": 6,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/@types/react/index.d.ts",
+													"qualifiedName": "React.ReactNode"
+												},
+												"name": "React.ReactNode",
+												"package": "@types/react"
+											}
+										},
+										{
+											"id": 35,
+											"name": "inverted",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Sets the style of the Code suitable for dark backgrounds."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@deprecated",
+														"content": [
+															{
+																"kind": "text",
+																"text": "to be removed in next version"
+															}
+														]
+													},
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`false`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/code/code.tsx",
+													"line": 10,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										},
+										{
+											"id": 36,
+											"name": "size",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Defines the font size of the Code sample. In general should be specified only when used as a standalone element."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`inherit`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/code/code.tsx",
+													"line": 13,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "inherit"
+													},
+													{
+														"type": "literal",
+														"value": "large"
+													},
+													{
+														"type": "literal",
+														"value": "medium"
+													},
+													{
+														"type": "literal",
+														"value": "small"
+													},
+													{
+														"type": "literal",
+														"value": "xlarge"
+													}
+												]
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												33,
+												34,
+												35,
+												36
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/code/code.tsx",
+											"line": 1,
+											"character": 63
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 37,
+					"name": "Code",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/code/code.tsx",
+							"line": 16,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 38,
+							"name": "Code",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/code/code.tsx",
+									"line": 16,
+									"character": 9
+								}
+							],
+							"parameters": [
+								{
+									"id": 39,
+									"name": "__namedParameters",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 31,
+										"name": "CodeProps",
+										"package": "typedoc-reproduction"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/@emotion/react/types/jsx-namespace.d.ts",
+									"qualifiedName": "EmotionJSX.Element"
+								},
+								"name": "Element",
+								"package": "@emotion/react",
+								"qualifiedName": "EmotionJSX.Element"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Type Aliases",
+					"children": [
+						31
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						37
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/code/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "link",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 40,
+					"name": "LinkProps",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/link/link-internal.tsx",
+							"line": 21,
+							"character": 12
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 41,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/@types/react/index.d.ts",
+									"qualifiedName": "React.ElementType"
+								},
+								"name": "React.ElementType",
+								"package": "@types/react"
+							},
+							"default": {
+								"type": "literal",
+								"value": "a"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 57,
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": 41,
+								"name": "T",
+								"package": "typedoc-reproduction",
+								"refersToTypeParameter": true
+							},
+							{
+								"type": "reference",
+								"target": 73,
+								"name": "LinkBaseProps",
+								"package": "typedoc-reproduction"
+							}
+						],
+						"name": "PolymorphicComponentProps",
+						"package": "typedoc-reproduction"
+					}
+				},
+				{
+					"id": 42,
+					"name": "Link",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/link/link.tsx",
+							"line": 10,
+							"character": 6
+						}
+					],
+					"signatures": [
+						{
+							"id": 43,
+							"name": "Link",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/link/link.tsx",
+									"line": 10,
+									"character": 6
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 44,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/@types/react/index.d.ts",
+											"qualifiedName": "React.ElementType"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "ElementType",
+										"package": "@types/react",
+										"qualifiedName": "React.ElementType"
+									},
+									"default": {
+										"type": "literal",
+										"value": "a"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 45,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 40,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 44,
+												"name": "T",
+												"package": "typedoc-reproduction",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "LinkProps",
+										"package": "typedoc-reproduction"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/@types/react/index.d.ts",
+											"qualifiedName": "__global.JSX.Element"
+										},
+										"name": "Element",
+										"package": "@types/react",
+										"qualifiedName": "__global.JSX.Element"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Type Aliases",
+					"children": [
+						40
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						42
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/link/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 6,
+			"name": "radio",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 46,
+					"name": "RadioProps",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/radio/radio-internal.tsx",
+							"line": 32,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": 80,
+								"name": "RadioOnly",
+								"package": "typedoc-reproduction"
+							},
+							{
+								"type": "reference",
+								"target": 84,
+								"name": "RadioWithLabel",
+								"package": "typedoc-reproduction"
+							}
+						]
+					}
+				},
+				{
+					"id": 47,
+					"name": "Radio",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/radio/radio.tsx",
+							"line": 5,
+							"character": 6
+						}
+					],
+					"signatures": [
+						{
+							"id": 48,
+							"name": "Radio",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "**NOTE**: Exotic components are not callable."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/radio/radio.tsx",
+									"line": 5,
+									"character": 6
+								}
+							],
+							"parameters": [
+								{
+									"id": 49,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intersection",
+										"types": [
+											{
+												"type": "reference",
+												"target": 46,
+												"name": "RadioProps",
+												"package": "typedoc-reproduction"
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/@types/react/index.d.ts",
+													"qualifiedName": "React.RefAttributes"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+															"qualifiedName": "HTMLInputElement"
+														},
+														"name": "HTMLInputElement",
+														"package": "typescript",
+														"externalUrl": "https://developer.mozilla.org/docs/Web/API/HTMLInputElement"
+													}
+												],
+												"name": "RefAttributes",
+												"package": "@types/react",
+												"qualifiedName": "React.RefAttributes"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/@types/react/index.d.ts",
+											"qualifiedName": "React.ReactElement"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											},
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/@types/react/index.d.ts",
+															"qualifiedName": "React.JSXElementConstructor"
+														},
+														"typeArguments": [
+															{
+																"type": "intrinsic",
+																"name": "any"
+															}
+														],
+														"name": "JSXElementConstructor",
+														"package": "@types/react",
+														"qualifiedName": "React.JSXElementConstructor"
+													}
+												]
+											}
+										],
+										"name": "ReactElement",
+										"package": "@types/react",
+										"qualifiedName": "React.ReactElement"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Type Aliases",
+					"children": [
+						46
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						47
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/radio/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "tag",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 56,
+					"name": "<internal>",
+					"variant": "declaration",
+					"kind": 2,
+					"flags": {},
+					"children": [
+						{
+							"id": 100,
+							"name": "ButtonBaseProps",
+							"variant": "declaration",
+							"kind": 2097152,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/button/button-internal.tsx",
+									"line": 3,
+									"character": 5
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 101,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 102,
+											"name": "inverted",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Sets the style of the Button suitable for dark backgrounds."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@deprecated",
+														"content": [
+															{
+																"kind": "text",
+																"text": "to be removed in next version"
+															}
+														]
+													},
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`false`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/button/button-internal.tsx",
+													"line": 7,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										},
+										{
+											"id": 103,
+											"name": "size",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Defines the size of the Button. In most cases, the default size should be used."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`medium`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/button/button-internal.tsx",
+													"line": 10,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "large"
+													},
+													{
+														"type": "literal",
+														"value": "medium"
+													},
+													{
+														"type": "literal",
+														"value": "small"
+													}
+												]
+											}
+										},
+										{
+											"id": 104,
+											"name": "variant",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Defines the variant of the Button."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`secondary`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/button/button-internal.tsx",
+													"line": 13,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "destructive"
+													},
+													{
+														"type": "literal",
+														"value": "plain"
+													},
+													{
+														"type": "literal",
+														"value": "primary"
+													},
+													{
+														"type": "literal",
+														"value": "secondary"
+													},
+													{
+														"type": "literal",
+														"value": "upgrade"
+													}
+												]
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												102,
+												103,
+												104
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/button/button-internal.tsx",
+											"line": 3,
+											"character": 23
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 63,
+							"name": "ButtonIconOnlyProps",
+							"variant": "declaration",
+							"kind": 2097152,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/button/button-internal.tsx",
+									"line": 16,
+									"character": 5
+								}
+							],
+							"type": {
+								"type": "intersection",
+								"types": [
+									{
+										"type": "reference",
+										"target": 100,
+										"name": "ButtonBaseProps",
+										"package": "typedoc-reproduction"
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 64,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 65,
+													"name": "aria-label",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/button/button-internal.tsx",
+															"line": 17,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 66,
+													"name": "children",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/button/button-internal.tsx",
+															"line": 18,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "never"
+													}
+												},
+												{
+													"id": 67,
+													"name": "icon",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "An icon displayed as the only content of the Button. Because of that, "
+															},
+															{
+																"kind": "code",
+																"text": "`aria-label`"
+															},
+															{
+																"kind": "text",
+																"text": " attribute must be specified."
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/button/button-internal.tsx",
+															"line": 20,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/@types/react/index.d.ts",
+															"qualifiedName": "__global.JSX.Element"
+														},
+														"name": "JSX.Element",
+														"package": "@types/react",
+														"qualifiedName": "__global.JSX.Element"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														65,
+														66,
+														67
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/button/button-internal.tsx",
+													"line": 16,
+													"character": 45
+												}
+											]
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": 68,
+							"name": "ButtonNoIconProps",
+							"variant": "declaration",
+							"kind": 2097152,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/button/button-internal.tsx",
+									"line": 23,
+									"character": 5
+								}
+							],
+							"type": {
+								"type": "intersection",
+								"types": [
+									{
+										"type": "reference",
+										"target": 100,
+										"name": "ButtonBaseProps",
+										"package": "typedoc-reproduction"
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 69,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 71,
+													"name": "children",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "The content inside the Button. Most of the time should be a plain text. Should never be an empty string."
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/button/button-internal.tsx",
+															"line": 27,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/@types/react/index.d.ts",
+															"qualifiedName": "React.ReactNode"
+														},
+														"name": "React.ReactNode",
+														"package": "@types/react"
+													}
+												},
+												{
+													"id": 72,
+													"name": "icon",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/button/button-internal.tsx",
+															"line": 28,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "never"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														71,
+														72
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/button/button-internal.tsx",
+													"line": 23,
+													"character": 43
+												}
+											]
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": 73,
+							"name": "LinkBaseProps",
+							"variant": "declaration",
+							"kind": 2097152,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/link/link-internal.tsx",
+									"line": 5,
+									"character": 5
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 74,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 75,
+											"name": "children",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The content of the Link."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/link/link-internal.tsx",
+													"line": 7,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/@types/react/index.d.ts",
+													"qualifiedName": "React.ReactNode"
+												},
+												"name": "React.ReactNode",
+												"package": "@types/react"
+											}
+										},
+										{
+											"id": 76,
+											"name": "iconLeft",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "An icon displayed to the left."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/link/link-internal.tsx",
+													"line": 9,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/@types/react/index.d.ts",
+													"qualifiedName": "__global.JSX.Element"
+												},
+												"name": "JSX.Element",
+												"package": "@types/react",
+												"qualifiedName": "__global.JSX.Element"
+											}
+										},
+										{
+											"id": 77,
+											"name": "iconRight",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "An icon displayed to the right."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/link/link-internal.tsx",
+													"line": 11,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/@types/react/index.d.ts",
+													"qualifiedName": "__global.JSX.Element"
+												},
+												"name": "JSX.Element",
+												"package": "@types/react",
+												"qualifiedName": "__global.JSX.Element"
+											}
+										},
+										{
+											"id": 78,
+											"name": "inverted",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Sets the style of the Link suitable for dark backgrounds."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@deprecated",
+														"content": [
+															{
+																"kind": "text",
+																"text": "to be removed in next version"
+															}
+														]
+													},
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`false`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/link/link-internal.tsx",
+													"line": 15,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										},
+										{
+											"id": 79,
+											"name": "size",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Defines the font size of the Link. In general should be specified only when used as a standalone element."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`inherit`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/link/link-internal.tsx",
+													"line": 18,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "inherit"
+													},
+													{
+														"type": "literal",
+														"value": "large"
+													},
+													{
+														"type": "literal",
+														"value": "medium"
+													},
+													{
+														"type": "literal",
+														"value": "small"
+													}
+												]
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												75,
+												76,
+												77,
+												78,
+												79
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/link/link-internal.tsx",
+											"line": 5,
+											"character": 21
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 57,
+							"name": "PolymorphicComponentProps",
+							"variant": "declaration",
+							"kind": 2097152,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/types.ts",
+									"line": 7,
+									"character": 12
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 61,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/@types/react/index.d.ts",
+											"qualifiedName": "React.ElementType"
+										},
+										"name": "React.ElementType",
+										"package": "@types/react"
+									}
+								},
+								{
+									"id": 62,
+									"name": "P",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Record"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "unknown"
+											}
+										],
+										"name": "Record",
+										"package": "typescript",
+										"externalUrl": "https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type"
+									}
+								}
+							],
+							"type": {
+								"type": "intersection",
+								"types": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Omit"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/@types/react/index.d.ts",
+													"qualifiedName": "React.ComponentPropsWithoutRef"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": 61,
+														"name": "T",
+														"package": "typedoc-reproduction",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "React.ComponentPropsWithoutRef",
+												"package": "@types/react"
+											},
+											{
+												"type": "typeOperator",
+												"operator": "keyof",
+												"target": {
+													"type": "reference",
+													"target": 62,
+													"name": "P",
+													"package": "typedoc-reproduction",
+													"refersToTypeParameter": true
+												}
+											}
+										],
+										"name": "Omit",
+										"package": "typescript",
+										"externalUrl": "https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys"
+									},
+									{
+										"type": "reference",
+										"target": 62,
+										"name": "P",
+										"package": "typedoc-reproduction",
+										"refersToTypeParameter": true
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 58,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 59,
+													"name": "as",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/types.ts",
+															"line": 11,
+															"character": 8
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": 61,
+														"name": "T",
+														"package": "typedoc-reproduction",
+														"refersToTypeParameter": true
+													}
+												},
+												{
+													"id": 60,
+													"name": "ref",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/types.ts",
+															"line": 11,
+															"character": 16
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": 98,
+														"typeArguments": [
+															{
+																"type": "reference",
+																"target": 61,
+																"name": "T",
+																"package": "typedoc-reproduction",
+																"refersToTypeParameter": true
+															}
+														],
+														"name": "PolymorphicRef",
+														"package": "typedoc-reproduction"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														59,
+														60
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/types.ts",
+													"line": 11,
+													"character": 6
+												}
+											]
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": 98,
+							"name": "PolymorphicRef",
+							"variant": "declaration",
+							"kind": 2097152,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/types.ts",
+									"line": 4,
+									"character": 12
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 99,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/@types/react/index.d.ts",
+											"qualifiedName": "React.ElementType"
+										},
+										"name": "React.ElementType",
+										"package": "@types/react"
+									}
+								}
+							],
+							"type": {
+								"type": "indexedAccess",
+								"indexType": {
+									"type": "literal",
+									"value": "ref"
+								},
+								"objectType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/@types/react/index.d.ts",
+										"qualifiedName": "React.ComponentPropsWithRef"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": 99,
+											"name": "T",
+											"package": "typedoc-reproduction",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "React.ComponentPropsWithRef",
+									"package": "@types/react"
+								}
+							}
+						},
+						{
+							"id": 105,
+							"name": "RadioBaseProps",
+							"variant": "declaration",
+							"kind": 2097152,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/radio/radio-internal.tsx",
+									"line": 3,
+									"character": 5
+								}
+							],
+							"type": {
+								"type": "intersection",
+								"types": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Omit"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/@types/react/index.d.ts",
+													"qualifiedName": "React.InputHTMLAttributes"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+															"qualifiedName": "HTMLInputElement"
+														},
+														"name": "HTMLInputElement",
+														"package": "typescript",
+														"externalUrl": "https://developer.mozilla.org/docs/Web/API/HTMLInputElement"
+													}
+												],
+												"name": "React.InputHTMLAttributes",
+												"package": "@types/react"
+											},
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "size"
+													},
+													{
+														"type": "literal",
+														"value": "type"
+													}
+												]
+											}
+										],
+										"name": "Omit",
+										"package": "typescript",
+										"externalUrl": "https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys"
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 106,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 107,
+													"name": "defaultChecked",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/radio/radio-internal.tsx",
+															"line": 7,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "never"
+													}
+												},
+												{
+													"id": 108,
+													"name": "error",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "Sets appropriate error styling, and "
+															},
+															{
+																"kind": "code",
+																"text": "`aria-invalid`"
+															},
+															{
+																"kind": "text",
+																"text": " attribute."
+															}
+														],
+														"blockTags": [
+															{
+																"tag": "@defaultValue",
+																"content": [
+																	{
+																		"kind": "code",
+																		"text": "`false`"
+																	}
+																]
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/radio/radio-internal.tsx",
+															"line": 10,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												},
+												{
+													"id": 109,
+													"name": "inverted",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "Sets the style of the Radio suitable for dark backgrounds."
+															}
+														],
+														"blockTags": [
+															{
+																"tag": "@deprecated",
+																"content": [
+																	{
+																		"kind": "text",
+																		"text": "to be removed in next version"
+																	}
+																]
+															},
+															{
+																"tag": "@defaultValue",
+																"content": [
+																	{
+																		"kind": "code",
+																		"text": "`false`"
+																	}
+																]
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/radio/radio-internal.tsx",
+															"line": 14,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												},
+												{
+													"id": 110,
+													"name": "size",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "Defines the size of the Radio. In most cases, the default size should be used."
+															}
+														],
+														"blockTags": [
+															{
+																"tag": "@defaultValue",
+																"content": [
+																	{
+																		"kind": "code",
+																		"text": "`medium`"
+																	}
+																]
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/radio/radio-internal.tsx",
+															"line": 17,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "literal",
+																"value": "large"
+															},
+															{
+																"type": "literal",
+																"value": "medium"
+															}
+														]
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														107,
+														108,
+														109,
+														110
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/radio/radio-internal.tsx",
+													"line": 6,
+													"character": 4
+												}
+											]
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": 80,
+							"name": "RadioOnly",
+							"variant": "declaration",
+							"kind": 2097152,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/radio/radio-internal.tsx",
+									"line": 27,
+									"character": 5
+								}
+							],
+							"type": {
+								"type": "intersection",
+								"types": [
+									{
+										"type": "reference",
+										"target": 105,
+										"name": "RadioBaseProps",
+										"package": "typedoc-reproduction"
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 81,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 82,
+													"name": "aria-label",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/radio/radio-internal.tsx",
+															"line": 28,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 83,
+													"name": "children",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/radio/radio-internal.tsx",
+															"line": 29,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "never"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														82,
+														83
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/radio/radio-internal.tsx",
+													"line": 27,
+													"character": 34
+												}
+											]
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": 84,
+							"name": "RadioWithLabel",
+							"variant": "declaration",
+							"kind": 2097152,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/radio/radio-internal.tsx",
+									"line": 20,
+									"character": 5
+								}
+							],
+							"type": {
+								"type": "intersection",
+								"types": [
+									{
+										"type": "reference",
+										"target": 105,
+										"name": "RadioBaseProps",
+										"package": "typedoc-reproduction"
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 85,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 87,
+													"name": "children",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "The label displayed next to the Radio."
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/radio/radio-internal.tsx",
+															"line": 24,
+															"character": 2
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/@types/react/index.d.ts",
+															"qualifiedName": "React.ReactNode"
+														},
+														"name": "React.ReactNode",
+														"package": "@types/react"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														87
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/radio/radio-internal.tsx",
+													"line": 20,
+													"character": 39
+												}
+											]
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": 88,
+							"name": "TagBaseProps",
+							"variant": "declaration",
+							"kind": 2097152,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/tag/tag-internal.tsx",
+									"line": 5,
+									"character": 5
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 89,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 90,
+											"name": "count",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Numerical value alongside the label."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/tag/tag-internal.tsx",
+													"line": 7,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 91,
+											"name": "icon",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "An icon displayed to the left of the label."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/tag/tag-internal.tsx",
+													"line": 9,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/@types/react/index.d.ts",
+													"qualifiedName": "__global.JSX.Element"
+												},
+												"name": "JSX.Element",
+												"package": "@types/react",
+												"qualifiedName": "__global.JSX.Element"
+											}
+										},
+										{
+											"id": 92,
+											"name": "label",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The text content of the Tag. Will be auto-truncated if the content is wider than the max-width."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/tag/tag-internal.tsx",
+													"line": 11,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 93,
+											"name": "onClick",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Handler called when the Tag is clicked ."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/tag/tag-internal.tsx",
+													"line": 13,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 94,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tag/tag-internal.tsx",
+															"line": 13,
+															"character": 12
+														}
+													],
+													"signatures": [
+														{
+															"id": 95,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"comment": {
+																"summary": [
+																	{
+																		"kind": "text",
+																		"text": "Handler called when the Tag is clicked ."
+																	}
+																]
+															},
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 96,
+											"name": "size",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Defines the size of the Tag. In most cases, the default size should be used."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`medium`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/tag/tag-internal.tsx",
+													"line": 16,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "large"
+													},
+													{
+														"type": "literal",
+														"value": "medium"
+													},
+													{
+														"type": "literal",
+														"value": "small"
+													}
+												]
+											}
+										},
+										{
+											"id": 97,
+											"name": "variant",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Determines the variant of the Tag, based on the set of predefined background colors."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@defaultValue",
+														"content": [
+															{
+																"kind": "code",
+																"text": "`blue`"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/tag/tag-internal.tsx",
+													"line": 19,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "red"
+													},
+													{
+														"type": "literal",
+														"value": "green"
+													},
+													{
+														"type": "literal",
+														"value": "blue"
+													}
+												]
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												90,
+												91,
+												92,
+												93,
+												96,
+												97
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/tag/tag-internal.tsx",
+											"line": 5,
+											"character": 20
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Type Aliases",
+							"children": [
+								100,
+								63,
+								68,
+								73,
+								57,
+								98,
+								105,
+								80,
+								84,
+								88
+							]
+						}
+					]
+				},
+				{
+					"id": 50,
+					"name": "TagProps",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/tag/tag-internal.tsx",
+							"line": 22,
+							"character": 12
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 51,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/@types/react/index.d.ts",
+									"qualifiedName": "React.ElementType"
+								},
+								"name": "React.ElementType",
+								"package": "@types/react"
+							},
+							"default": {
+								"type": "literal",
+								"value": "button"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 57,
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": 51,
+								"name": "T",
+								"package": "typedoc-reproduction",
+								"refersToTypeParameter": true
+							},
+							{
+								"type": "reference",
+								"target": 88,
+								"name": "TagBaseProps",
+								"package": "typedoc-reproduction"
+							}
+						],
+						"name": "PolymorphicComponentProps",
+						"package": "typedoc-reproduction"
+					}
+				},
+				{
+					"id": 52,
+					"name": "Tag",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/tag/tag.tsx",
+							"line": 10,
+							"character": 6
+						}
+					],
+					"signatures": [
+						{
+							"id": 53,
+							"name": "Tag",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/tag/tag.tsx",
+									"line": 10,
+									"character": 6
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 54,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/@types/react/index.d.ts",
+											"qualifiedName": "React.ElementType"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "ElementType",
+										"package": "@types/react",
+										"qualifiedName": "React.ElementType"
+									},
+									"default": {
+										"type": "literal",
+										"value": "button"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 55,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 50,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 54,
+												"name": "T",
+												"package": "typedoc-reproduction",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "TagProps",
+										"package": "typedoc-reproduction"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/@types/react/index.d.ts",
+											"qualifiedName": "__global.JSX.Element"
+										},
+										"name": "Element",
+										"package": "@types/react",
+										"qualifiedName": "__global.JSX.Element"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Modules",
+					"children": [
+						56
+					]
+				},
+				{
+					"title": "Type Aliases",
+					"children": [
+						50
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						52
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/tag/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"children": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		}
+	],
+	"packageName": "typedoc-reproduction",
+	"packageVersion": "0.0.1",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "# typedoc-reproduce\nsmall reproduction of a typedoc issue being experienced"
+		}
+	],
+	"symbolIdMap": {
+		"1": {
+			"sourceFileName": "src/avatar/index.ts",
+			"qualifiedName": ""
+		},
+		"2": {
+			"sourceFileName": "src/badge/index.ts",
+			"qualifiedName": ""
+		},
+		"3": {
+			"sourceFileName": "src/button/index.ts",
+			"qualifiedName": ""
+		},
+		"4": {
+			"sourceFileName": "src/code/index.ts",
+			"qualifiedName": ""
+		},
+		"5": {
+			"sourceFileName": "src/link/index.ts",
+			"qualifiedName": ""
+		},
+		"6": {
+			"sourceFileName": "src/radio/index.ts",
+			"qualifiedName": ""
+		},
+		"7": {
+			"sourceFileName": "src/tag/index.ts",
+			"qualifiedName": ""
+		},
+		"8": {
+			"sourceFileName": "src/avatar/avatar.tsx",
+			"qualifiedName": "AvatarProps"
+		},
+		"9": {
+			"sourceFileName": "src/avatar/avatar.tsx",
+			"qualifiedName": "__type"
+		},
+		"10": {
+			"sourceFileName": "src/avatar/avatar.tsx",
+			"qualifiedName": "__type.content"
+		},
+		"11": {
+			"sourceFileName": "src/avatar/avatar.tsx",
+			"qualifiedName": "__type.contentFill"
+		},
+		"12": {
+			"sourceFileName": "src/avatar/avatar.tsx",
+			"qualifiedName": "__type.size"
+		},
+		"13": {
+			"sourceFileName": "src/avatar/avatar.tsx",
+			"qualifiedName": "__type.variant"
+		},
+		"14": {
+			"sourceFileName": "src/avatar/avatar.tsx",
+			"qualifiedName": "Avatar"
+		},
+		"15": {
+			"sourceFileName": "src/avatar/avatar.tsx",
+			"qualifiedName": "Avatar"
+		},
+		"16": {
+			"sourceFileName": "src/avatar/avatar.tsx",
+			"qualifiedName": "__0"
+		},
+		"17": {
+			"sourceFileName": "src/badge/badge.tsx",
+			"qualifiedName": "BadgeProps"
+		},
+		"18": {
+			"sourceFileName": "src/badge/badge.tsx",
+			"qualifiedName": "__type"
+		},
+		"19": {
+			"sourceFileName": "src/badge/badge.tsx",
+			"qualifiedName": "__type.children"
+		},
+		"20": {
+			"sourceFileName": "src/badge/badge.tsx",
+			"qualifiedName": "__type.size"
+		},
+		"21": {
+			"sourceFileName": "src/badge/badge.tsx",
+			"qualifiedName": "__type.variant"
+		},
+		"22": {
+			"sourceFileName": "src/badge/badge.tsx",
+			"qualifiedName": "Badge"
+		},
+		"23": {
+			"sourceFileName": "src/badge/badge.tsx",
+			"qualifiedName": "Badge"
+		},
+		"24": {
+			"sourceFileName": "src/badge/badge.tsx",
+			"qualifiedName": "__0"
+		},
+		"25": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "ButtonProps"
+		},
+		"26": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "T"
+		},
+		"27": {
+			"sourceFileName": "src/button/button.tsx",
+			"qualifiedName": "Button"
+		},
+		"28": {
+			"sourceFileName": "src/button/button.tsx",
+			"qualifiedName": "Button"
+		},
+		"29": {
+			"sourceFileName": "src/button/button.tsx",
+			"qualifiedName": "T"
+		},
+		"30": {
+			"sourceFileName": "src/button/button.tsx",
+			"qualifiedName": "props"
+		},
+		"31": {
+			"sourceFileName": "src/code/code.tsx",
+			"qualifiedName": "CodeProps"
+		},
+		"32": {
+			"sourceFileName": "src/code/code.tsx",
+			"qualifiedName": "__type"
+		},
+		"33": {
+			"sourceFileName": "src/code/code.tsx",
+			"qualifiedName": "__type.as"
+		},
+		"34": {
+			"sourceFileName": "src/code/code.tsx",
+			"qualifiedName": "__type.children"
+		},
+		"35": {
+			"sourceFileName": "src/code/code.tsx",
+			"qualifiedName": "__type.inverted"
+		},
+		"36": {
+			"sourceFileName": "src/code/code.tsx",
+			"qualifiedName": "__type.size"
+		},
+		"37": {
+			"sourceFileName": "src/code/code.tsx",
+			"qualifiedName": "Code"
+		},
+		"38": {
+			"sourceFileName": "src/code/code.tsx",
+			"qualifiedName": "Code"
+		},
+		"39": {
+			"sourceFileName": "src/code/code.tsx",
+			"qualifiedName": "__0"
+		},
+		"40": {
+			"sourceFileName": "src/link/link-internal.tsx",
+			"qualifiedName": "LinkProps"
+		},
+		"41": {
+			"sourceFileName": "src/link/link-internal.tsx",
+			"qualifiedName": "T"
+		},
+		"42": {
+			"sourceFileName": "src/link/link.tsx",
+			"qualifiedName": "Link"
+		},
+		"43": {
+			"sourceFileName": "src/link/link.tsx",
+			"qualifiedName": "Link"
+		},
+		"44": {
+			"sourceFileName": "src/link/link.tsx",
+			"qualifiedName": "T"
+		},
+		"45": {
+			"sourceFileName": "src/link/link.tsx",
+			"qualifiedName": "props"
+		},
+		"46": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "RadioProps"
+		},
+		"47": {
+			"sourceFileName": "src/radio/radio.tsx",
+			"qualifiedName": "Radio"
+		},
+		"48": {
+			"sourceFileName": "node_modules/@types/react/index.d.ts",
+			"qualifiedName": "Radio"
+		},
+		"49": {
+			"sourceFileName": "node_modules/@types/react/index.d.ts",
+			"qualifiedName": "props"
+		},
+		"50": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "TagProps"
+		},
+		"51": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "T"
+		},
+		"52": {
+			"sourceFileName": "src/tag/tag.tsx",
+			"qualifiedName": "Tag"
+		},
+		"53": {
+			"sourceFileName": "src/tag/tag.tsx",
+			"qualifiedName": "Tag"
+		},
+		"54": {
+			"sourceFileName": "src/tag/tag.tsx",
+			"qualifiedName": "T"
+		},
+		"55": {
+			"sourceFileName": "src/tag/tag.tsx",
+			"qualifiedName": "props"
+		},
+		"57": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "PolymorphicComponentProps"
+		},
+		"58": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type"
+		},
+		"59": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.as"
+		},
+		"60": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.ref"
+		},
+		"61": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "T"
+		},
+		"62": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "P"
+		},
+		"63": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "ButtonIconOnlyProps"
+		},
+		"64": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type"
+		},
+		"65": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type.aria-label"
+		},
+		"66": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type.children"
+		},
+		"67": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type.icon"
+		},
+		"68": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "ButtonNoIconProps"
+		},
+		"69": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type"
+		},
+		"71": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type.children"
+		},
+		"72": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type.icon"
+		},
+		"73": {
+			"sourceFileName": "src/link/link-internal.tsx",
+			"qualifiedName": "LinkBaseProps"
+		},
+		"74": {
+			"sourceFileName": "src/link/link-internal.tsx",
+			"qualifiedName": "__type"
+		},
+		"75": {
+			"sourceFileName": "src/link/link-internal.tsx",
+			"qualifiedName": "__type.children"
+		},
+		"76": {
+			"sourceFileName": "src/link/link-internal.tsx",
+			"qualifiedName": "__type.iconLeft"
+		},
+		"77": {
+			"sourceFileName": "src/link/link-internal.tsx",
+			"qualifiedName": "__type.iconRight"
+		},
+		"78": {
+			"sourceFileName": "src/link/link-internal.tsx",
+			"qualifiedName": "__type.inverted"
+		},
+		"79": {
+			"sourceFileName": "src/link/link-internal.tsx",
+			"qualifiedName": "__type.size"
+		},
+		"80": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "RadioOnly"
+		},
+		"81": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "__type"
+		},
+		"82": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "__type.aria-label"
+		},
+		"83": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "__type.children"
+		},
+		"84": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "RadioWithLabel"
+		},
+		"85": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "__type"
+		},
+		"87": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "__type.children"
+		},
+		"88": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "TagBaseProps"
+		},
+		"89": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "__type"
+		},
+		"90": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "__type.count"
+		},
+		"91": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "__type.icon"
+		},
+		"92": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "__type.label"
+		},
+		"93": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "__type.onClick"
+		},
+		"94": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "__type"
+		},
+		"95": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "__type"
+		},
+		"96": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "__type.size"
+		},
+		"97": {
+			"sourceFileName": "src/tag/tag-internal.tsx",
+			"qualifiedName": "__type.variant"
+		},
+		"98": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "PolymorphicRef"
+		},
+		"99": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "T"
+		},
+		"100": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "ButtonBaseProps"
+		},
+		"101": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type"
+		},
+		"102": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type.inverted"
+		},
+		"103": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type.size"
+		},
+		"104": {
+			"sourceFileName": "src/button/button-internal.tsx",
+			"qualifiedName": "__type.variant"
+		},
+		"105": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "RadioBaseProps"
+		},
+		"106": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "__type"
+		},
+		"107": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "__type.defaultChecked"
+		},
+		"108": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "__type.error"
+		},
+		"109": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "__type.inverted"
+		},
+		"110": {
+			"sourceFileName": "src/radio/radio-internal.tsx",
+			"qualifiedName": "__type.size"
+		}
+	}
+}

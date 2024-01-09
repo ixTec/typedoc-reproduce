@@ -1,0 +1,43 @@
+{
+  "name": "typedoc-reproduction",
+  "version": "0.0.1",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.esm.json && yarn build:typedoc",
+    "build:typedoc": "typedoc --options typedoc.json"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.22.5",
+    "@emotion/babel-plugin": "^11.10.0",
+    "@emotion/react": "^11.10.0",
+    "@types/node": "^20.4.2",
+    "@types/react": "^17.0.64",
+    "@types/react-dom": "^17.0.20",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.2",
+    "resize-observer-polyfill": "^1.5.1",
+    "typedoc": "^0.25.4",
+    "typedoc-plugin-mdn-links": "^3.1.10",
+    "typedoc-plugin-missing-exports": "^2.1.0",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "@emotion/react": ">=11.0.0 < 12",
+    "react": ">= 17.0.0 < 18",
+    "react-dom": ">= 17.0.0 < 18"
+  },
+  "dependencies": {
+    "react-range": "^1.8.14"
+  },
+  "resolutions": {
+    "@types/react": "< 18",
+    "@react-aria/utils": "< 3.18.0",
+    "@react-aria/interactions": "< 3.16.0",
+    "@react-aria/ssr": "< 3.7.0",
+    "@react-stately/utils": "< 3.7.0"
+  }
+}
